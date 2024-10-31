@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import IB from './src/assets/images/b.jpg'
+import Images from 'virtual:images'
+import IB from './src/assets/images/b.png'
 </script>
 
 <template>
@@ -7,6 +8,7 @@ import IB from './src/assets/images/b.jpg'
     unplugin-vue-images
   </div>
 
+  <img :src="Images.IA">
   <img :src="IA">
   <img :src="IB">
   <img :src="IInnerC">

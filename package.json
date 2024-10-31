@@ -75,6 +75,7 @@
     }
   },
   "files": [
+    "client.d.ts",
     "dist"
   ],
   "scripts": {

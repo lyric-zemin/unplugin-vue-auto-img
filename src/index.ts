@@ -8,6 +8,8 @@ import { generateImageMap, imageMap } from './utils/imageMap'
 import { generateDts } from './utils/dts'
 import { toArray } from './utils/util'
 
+const ID = 'virtual:images'
+
 export const unpluginFactory: UnpluginFactory<Options | undefined> = (options) => {
   const ops = resolveOptions(options)
   const filter = createFilter(ops.include, ops.exclude)
@@ -18,6 +20,14 @@ export const unpluginFactory: UnpluginFactory<Options | undefined> = (options) =
     buildStart: async () => {
       await generateImageMap(ops)
       await generateDts(ops)
+    },
+    resolveId(id) {
+      if (id === ID)
+        return id
+    },
+    load(id) {
+      if (id === ID)
+        return `export default ${JSON.stringify(Object.fromEntries(imageMap))}`
     },
     transformInclude: id => filter(id),
     transform(code) {

@@ -4,7 +4,7 @@ export {}
 declare module 'vue' {
   interface ComponentCustomProperties {
     readonly IA: typeof import('/src/assets/images/a.png')['default']
-    readonly IB: typeof import('/src/assets/images/b.jpg')['default']
+    readonly IB: typeof import('/src/assets/images/b.png')['default']
     readonly IInnerC: typeof import('/src/assets/images/inner/c.png')['default']
   }
 }
