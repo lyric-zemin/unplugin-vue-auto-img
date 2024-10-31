@@ -8,9 +8,9 @@ describe('imageMap', () => {
 
     expect(imageMap).toMatchInlineSnapshot(`
       Map {
-        "A" => "test/src/a.png",
-        "B" => "test/src/b.jpg",
-        "InnerC" => "test/src/inner/c.png",
+        "IA" => "/test/src/a.png",
+        "IB" => "/test/src/b.jpg",
+        "IInnerC" => "/test/src/inner/c.png",
       }
     `)
   })

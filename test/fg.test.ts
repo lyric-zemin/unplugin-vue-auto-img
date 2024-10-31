@@ -20,6 +20,8 @@ describe('fg', () => {
         "src/types.ts",
         "src/vite.ts",
         "src/webpack.ts",
+        "src/utils/constant.ts",
+        "src/utils/dts.ts",
         "src/utils/imageMap.ts",
         "src/utils/options.ts",
         "src/utils/util.ts",
