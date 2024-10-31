@@ -6,6 +6,7 @@ import type { Options } from './types'
 import { resolveOptions } from './utils/options'
 import { generateImageMap, imageMap } from './utils/imageMap'
 import { generateDts } from './utils/dts'
+import { toArray } from './utils/util'
 
 export const unpluginFactory: UnpluginFactory<Options | undefined> = (options) => {
   const ops = resolveOptions(options)
@@ -38,6 +39,20 @@ export const unpluginFactory: UnpluginFactory<Options | undefined> = (options) =
       return {
         code: prependStr + ret,
       }
+    },
+    vite: {
+      configureServer({ watcher }) {
+        watcher.on('all', async (eventName, path) => {
+          if (['add', 'unlink'].includes(eventName)) {
+            path = path.replaceAll('\\', '/')
+            if (toArray(ops.dirs).some(dir => path.includes(dir))) {
+              imageMap.clear()
+              await generateImageMap(ops)
+              await generateDts(ops)
+            }
+          }
+        })
+      },
     },
   }
 }
