@@ -7,15 +7,14 @@ import { resolveOptions } from './utils/options'
 import { generateImageMap, imageMap } from './utils/imageMap'
 import { generateDts } from './utils/dts'
 import { toArray } from './utils/util'
-
-const ID = 'virtual:images'
+import { ID, Name } from './utils/constant'
 
 export const unpluginFactory: UnpluginFactory<Options | undefined> = (options) => {
   const ops = resolveOptions(options)
   const filter = createFilter(ops.include, ops.exclude)
 
   return {
-    name: 'unplugin-vue-images',
+    name: Name,
     enforce: 'post',
     buildStart: async () => {
       await generateImageMap(ops)
