@@ -1,0 +1,18 @@
+{
+  "eslint.useFlatConfig": true,
+  "cSpell.words": [
+    "antfu",
+    "astro",
+    "bumpp",
+    "esno",
+    "farmfe",
+    "pluginutils",
+    "postbuild",
+    "rspack",
+    "tsup",
+    "unplugin"
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  }
+}

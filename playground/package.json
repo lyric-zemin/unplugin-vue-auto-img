@@ -1,0 +1,15 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "nodemon -w '../src/**/*.ts' -e .ts -x vite"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "^5.1.4",
+    "add": "^2.0.6",
+    "vue": "^3.5.12"
+  },
+  "devDependencies": {
+    "vite": "^5.4.2",
+    "vite-plugin-inspect": "^0.8.7"
+  }
+}
