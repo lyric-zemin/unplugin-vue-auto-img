@@ -5,13 +5,13 @@
   "packageManager": "pnpm@9.9.0",
   "description": "",
   "license": "MIT",
-  "homepage": "https://github.com/antfu/unplugin-starter#readme",
+  "homepage": "https://github.com/lyric-zemin/unplugin-vue-images#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/antfu/unplugin-starter.git"
+    "url": "git+https://github.com/lyric-zemin/unplugin-vue-images.git"
   },
   "bugs": {
-    "url": "https://github.com/antfu/unplugin-starter/issues"
+    "url": "https://github.com/lyric-zemin/unplugin-vue-images/issues"
   },
   "keywords": [
     "unplugin",
