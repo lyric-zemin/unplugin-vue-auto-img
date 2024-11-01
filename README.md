@@ -1,4 +1,4 @@
-# unplugin-vue-images
+# unplugin-vue-auto-img
 
 Automatically import images into the vue project
 
@@ -12,7 +12,7 @@ add them to the types property in your tsconfig.json:
 {
   "compilerOptions": {
     // ...
-    "types": ["unplugin-vue-images/client"]
+    "types": ["unplugin-vue-auto-img/client"]
   }
 }
 ````
@@ -20,7 +20,7 @@ add them to the types property in your tsconfig.json:
 ## Install
 
 ```bash
-npm i unplugin-vue-images
+npm i unplugin-vue-auto-img
 ```
 
 <details>
@@ -28,7 +28,7 @@ npm i unplugin-vue-images
 
 ```ts
 // vite.config.ts
-import Images from 'unplugin-vue-images/vite'
+import Images from 'unplugin-vue-auto-img/vite'
 
 export default defineConfig({
   plugins: [
@@ -46,7 +46,7 @@ Example: [`playground/`](./playground/)
 
 ```ts
 // rollup.config.js
-import Images from 'unplugin-vue-images/rollup'
+import Images from 'unplugin-vue-auto-img/rollup'
 
 export default {
   plugins: [
@@ -65,7 +65,7 @@ export default {
 module.exports = {
   /* ... */
   plugins: [
-    require('unplugin-vue-images/webpack')({ /* options */ })
+    require('unplugin-vue-auto-img/webpack')({ /* options */ })
   ]
 }
 ```
@@ -79,7 +79,7 @@ module.exports = {
 // nuxt.config.js
 export default defineNuxtConfig({
   modules: [
-    ['unplugin-vue-images/nuxt', { /* options */ }],
+    ['unplugin-vue-auto-img/nuxt', { /* options */ }],
   ],
 })
 ```
@@ -96,7 +96,7 @@ export default defineNuxtConfig({
 module.exports = {
   configureWebpack: {
     plugins: [
-      require('unplugin-vue-images/webpack')({ /* options */ }),
+      require('unplugin-vue-auto-img/webpack')({ /* options */ }),
     ],
   },
 }
@@ -110,7 +110,7 @@ module.exports = {
 ```ts
 // esbuild.config.js
 import { build } from 'esbuild'
-import Images from 'unplugin-vue-images/esbuild'
+import Images from 'unplugin-vue-auto-img/esbuild'
 
 build({
   plugins: [Images()],
@@ -121,7 +121,7 @@ build({
 
 ## Usage
 
-`unplugin-vue-images` auto import your image from `assets/images` by default to your Vue component.
+`unplugin-vue-auto-img` auto import your image from `assets/images` by default to your Vue component.
 
 You can only use image variables using camelCase.
 

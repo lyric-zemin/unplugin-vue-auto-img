@@ -5,7 +5,7 @@ import IB from './src/assets/images/b.png'
 
 <template>
   <div>
-    unplugin-vue-images
+    unplugin-vue-auto-img
   </div>
 
   <img :src="Images.IA">

@@ -1,17 +1,17 @@
 {
-  "name": "unplugin-vue-images",
+  "name": "unplugin-vue-auto-img",
   "type": "module",
   "version": "0.1.0",
   "packageManager": "pnpm@9.9.0",
   "description": "",
   "license": "MIT",
-  "homepage": "https://github.com/lyric-zemin/unplugin-vue-images#readme",
+  "homepage": "https://github.com/lyric-zemin/unplugin-vue-auto-img#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lyric-zemin/unplugin-vue-images.git"
+    "url": "git+https://github.com/lyric-zemin/unplugin-vue-auto-img.git"
   },
   "bugs": {
-    "url": "https://github.com/lyric-zemin/unplugin-vue-images/issues"
+    "url": "https://github.com/lyric-zemin/unplugin-vue-auto-img/issues"
   },
   "keywords": [
     "unplugin",
