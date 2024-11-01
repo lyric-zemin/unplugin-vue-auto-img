@@ -1,4 +1,7 @@
 declare module 'virtual:images' {
-  const Images: Record<string, string>
+  export interface ImageMap { }
+
+  const Images: ImageMap
+
   export default Images
 }

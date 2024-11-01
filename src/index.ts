@@ -25,8 +25,16 @@ export const unpluginFactory: UnpluginFactory<Options | undefined> = (options) =
         return id
     },
     load(id) {
-      if (id === ID)
-        return `export default ${JSON.stringify(Object.fromEntries(imageMap))}`
+      if (id === ID) {
+        let entry = ''
+        const outletNames: string[] = []
+        for (const [name, path] of imageMap) {
+          entry += `import ${name} from '${path}';`
+          outletNames.push(name)
+        }
+        entry += `export default { ${outletNames.join(',')} };`
+        return entry
+      }
     },
     transformInclude: id => filter(id),
     transform(code) {

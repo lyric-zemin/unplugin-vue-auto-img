@@ -2,7 +2,20 @@
 
 Automatically import images into the vue project
 
-<!-- [![NPM version](https://img.shields.io/npm/v/unplugin-vue-images?color=a1b858&label=)](https://www.npmjs.com/package/unplugin-vue-images) -->
+[![NPM version](https://img.shields.io/npm/v/unplugin-vue-auto-img?color=a1b858&label=)](https://www.npmjs.com/package/unplugin-vue-auto-img)
+
+## .d.ts
+
+add them to the types property in your tsconfig.json:
+
+```json
+{
+  "compilerOptions": {
+    // ...
+    "types": ["unplugin-vue-images/client"]
+  }
+}
+````
 
 ## Install
 
@@ -105,3 +118,29 @@ build({
 ```
 
 <br></details>
+
+## Usage
+
+`unplugin-vue-images` auto import your image from `assets/images` by default to your Vue component.
+
+You can only use image variables using camelCase.
+
+```
+--- assets
+  --- images
+    --- logo.png
+--- App.vue
+```
+
+```vue
+--- src/App.vue ---
+<template>
+  <div>
+    <img :src="ILogo">
+  </div>
+</template>
+```
+
+## License
+
+[MIT](./LICENSE)
