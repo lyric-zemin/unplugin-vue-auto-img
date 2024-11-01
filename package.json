@@ -122,7 +122,7 @@
     }
   },
   "dependencies": {
-    "add": "^2.0.6",
+    "fast-glob": "^3.3.2",
     "unplugin": "^1.12.2"
   },
   "devDependencies": {
@@ -134,7 +134,6 @@
     "chalk": "^5.3.0",
     "eslint": "^9.9.1",
     "esno": "^4.7.0",
-    "fast-glob": "^3.3.2",
     "nodemon": "^3.1.4",
     "rollup": "^4.21.2",
     "tsup": "^8.2.4",
