@@ -18,7 +18,7 @@ export async function generateImageMap(options: RequiredOptions): Promise<void> 
   for (const entry of entries) {
     const paths = replaceDirectory(entry, toArray(dirs)).split('/')
     const name = [ns, ...(directoryAsNamespace ? paths.slice(0, -1) : []), paths.slice(-1)[0].replace(/\.[^.]+$/, '')].map(capitalize).join('')
-    imageMap.set(name, `/${entry}`)
+    imageMap.set(camelCase(name), `/${entry}`)
   }
 }
 
