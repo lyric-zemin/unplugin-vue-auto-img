@@ -10,7 +10,8 @@ describe('imageMap', () => {
       Map {
         "IA" => "/test/src/a.png",
         "IB" => "/test/src/b.jpg",
-        "ICD" => "/test/src/c-d.png",
+        "IC-d" => "/test/src/c-d.png",
+        "ID@f" => "/test/src/d@f.png",
         "IInnerC" => "/test/src/inner/c.png",
       }
     `)

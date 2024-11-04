@@ -10,6 +10,7 @@ describe('fg', () => {
         "test/src/a.png",
         "test/src/b.jpg",
         "test/src/c-d.png",
+        "test/src/d@f.png",
         "test/src/inner/c.png",
         "src/astro.ts",
         "src/esbuild.ts",
